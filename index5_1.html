@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>III CSE-A Timetable</title>
+  <style>
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #f5f5f5;
+    }
+    .Nav {
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .logo a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 6px 12px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #00ffc8;
+      border-radius: 5px;
+      color: #121212;
+    }
+
+    .nav-links button {
+      background-color: #00ffc8;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    .nav-links button a {
+      text-decoration: none;
+      color: #121212;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00ffc8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1f1f1f;
+      color: #f5f5f5;
+    }
+
+    table, th, td {
+      border: 1px solid #444;
+      text-align: center;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #00ffc8;
+      color: #121212;
+    }
+
+    td {
+      font-weight: bold;
+    }
+
+    .lab {
+      background-color: #2e7d32; /* Deep green for lab cells */
+      color: #ffffff;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="Nav">
+    <div class="logo"><a href="#">KITS</a></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Time Table</a>
+      <a href="#">Contact</a>
+      <button><a href="#">Login</a></button>
+      <button><a href="#">SignUp</a></button>
+    </div>
+  </div>
+
+  <!-- Timetable Section -->
+  <div class="content">
+    <h2>III CSE-A Weekly Class Timetable</h2>
+    <table>
+      <tr>
+        <th>Day / Period</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr>
+        <td>SUN</td>
+        <td>DAA</td>
+        <td class="lab" colspan="2">MEAN LAB</td>
+        <td>CN</td>
+        <td>BE</td>
+        <td>TRNG</td>
+      </tr>
+      <tr>
+        <td>MON</td>
+        <td>TRNG</td>
+        <td>TRNG</td>
+        <td>BE</td>
+        <td>SPM</td>
+        <td>DL</td>
+        <td>DAA</td>
+      </tr>
+      <tr>
+        <td>TUE</td>
+        <td>SPM</td>
+        <td class="lab" colspan="2">DAA LAB</td>
+        <td>CN</td>
+        <td>DAA</td>
+        <td>BE</td>
+      </tr>
+      <tr>
+        <td>WED</td>
+        <td>TRNG</td>
+        <td>CN</td>
+        <td>SPM</td>
+        <td>DL</td>
+        <td class="lab" colspan="2">DL LAB</td>
+      </tr>
+      <tr>
+        <td>FRI</td>
+        <td>DL</td>
+        <td class="lab" colspan="2">CN LAB</td>
+        <td>LIB/I/M</td>
+        <td>BE</td>
+        <td>DAA/M</td>
+      </tr>
+      <tr>
+        <td>SAT</td>
+        <td>DAA</td>
+        <td>DL</td>
+        <td>CN</td>
+        <td>SPM</td>
+        <td colspan="2">SPORTS/M</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
