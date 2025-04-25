@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Navbar with Signup Form</title>
+    <style>
+        body {
+            background-color: #0f0303;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Nav {
+            background-color: #f80f0f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .logo a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+        }
+
+        .nav-links a:hover {
+            background-color: #3ae5ee;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .nav-links button {
+            background-color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .nav-links button a {
+            text-decoration: none;
+            color: #f80f0f;
+            font-weight: bold;
+        }
+
+        .signup-form {
+            background-color: white;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #f80f0f;
+            color: black;
+        }
+
+        .signup-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #fname, #lname, #gmail, #dob, #password, #repassword,#remarks {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .signup-form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .signup-form textarea {
+            height: 80px;
+        }
+
+        .signup-form .terms {
+            margin-top: 10px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f80f0f;
+            color: white;
+            font-size: 16px;
+            border: none;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .signup-form button:hover {
+            background-color: #d10c0c;
+        }
+
+        .signup-form .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .signup-form .links a {
+            color: #f80f0f;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="Nav">
+        <div class="logo"><a href="#">KITS</a></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <button><a href="#">Login</a></button>
+            <button><a href="#">SignUp</a></button>
+        </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-form">
+        <h2>Signup Form</h2>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter first name">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Enter last name">
+
+            <label for="gmail">Gmail:</label>
+            <input type="email" id="gmail" placeholder="Enter Gmail">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male" style="display: inline;">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female" style="display: inline;">Female</label>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <label for="repassword">Re-enter Password:</label>
+            <input type="password" id="repassword" placeholder="Re-enter password">
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" placeholder="Write your remarks here..."></textarea>
+
+            <div class="terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit">Signup</button>
+
+            <div class="links">
+                <a href="#">Already have an account? Login</a> |
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

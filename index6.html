@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Project - Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    .Nav {
+      background-color: #f80f0f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .logo a {
+      font-size: 30px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a, .nav-links button a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+    }
+
+    .nav-links a:hover {
+      background-color: #3ae5ee;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .nav-links button {
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+    }
+
+    .nav-links button a {
+      color: #f80f0f;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      color: #f80f0f;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .menu {
+      padding: 20px;
+    }
+
+    .menu-item {
+      background-color: #f4f4f4;
+      margin: 10px auto;
+      padding: 15px;
+      max-width: 600px;
+      border-left: 5px solid #f80f0f;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f80f0f;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="Nav">
+    <div class="logo"><a href="#">FoodHub</a></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <button><a href="#">Login</a></button>
+      <button><a href="#">SignUp</a></button>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Welcome to FoodHub</h1>
+    <p>Your favorite spot for delicious food and great service.</p>
+
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Veg Biryani</h3>
+        <p>Fragrant rice dish cooked with fresh vegetables and spices.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Paneer Butter Masala</h3>
+        <p>Cottage cheese cooked in creamy tomato gravy. Served with roti.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken 65</h3>
+        <p>Spicy deep-fried chicken cubes served with mint chutney.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cold Coffee</h3>
+        <p>Chilled coffee blended with milk and ice, topped with cream.</p>
+      </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <p>Email: contact@foodhub.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: 123, Main Street, Food City</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 FoodHub Restaurant. All Rights Reserved.
+  </div>
+
+</body>
+</html>

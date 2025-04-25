@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>III CSE-A Timetable</title>
+  <style>
+    body {
+      background-color: #0f0303;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    .Nav {
+      background-color: #f80f0f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .logo a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+    }
+
+    .nav-links a:hover {
+      background-color: #3ae5ee;
+      border-radius: 5px;
+      color: black;
+    }
+
+    .nav-links button {
+      background-color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+
+    .nav-links button a {
+      text-decoration: none;
+      color: #f80f0f;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      color: black;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #3ae5ee;
+    }
+
+    td {
+      font-weight: bold;
+    }
+
+    .lab {
+      background-color: #d2f8d2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="Nav">
+    <div class="logo"><a href="#">KITS</a></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Time Table</a>
+      <a href="#">Contact</a>
+      <button><a href="#">Login</a></button>
+      <button><a href="#">SignUp</a></button>
+    </div>
+  </div>
+
+  <!-- Timetable Section -->
+  <div class="content">
+    <h2>III CSE-A Weekly Class Timetable</h2>
+    <table>
+      <tr>
+        <th>Day / Period</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr>
+        <td>SUN</td>
+        <td>DAA</td>
+        <td class="lab" colspan="2">MEAN LAB</td>
+        <td>CN</td>
+        <td>BE</td>
+        <td>TRNG</td>
+      </tr>
+      <tr>
+        <td>MON</td>
+        <td>TRNG</td>
+        <td>TRNG</td>
+        <td>BE</td>
+        <td>SPM</td>
+        <td>DL</td>
+        <td>DAA</td>
+      </tr>
+      <tr>
+        <td>TUE</td>
+        <td>SPM</td>
+        <td class="lab" colspan="2">DAA LAB</td>
+        <td>CN</td>
+        <td>DAA</td>
+        <td>BE</td>
+      </tr>
+      <tr>
+        <td>WED</td>
+        <td>TRNG</td>
+        <td>CN</td>
+        <td>SPM</td>
+        <td>DL</td>
+        <td class="lab" colspan="2">DL LAB</td>
+      </tr>
+      <tr>
+        <td>FRI</td>
+        <td>DL</td>
+        <td class="lab" colspan="2">CN LAB</td>
+        <td>LIB/I/M</td>
+        <td>BE</td>
+        <td>DAA/M</td>
+      </tr>
+      <tr>
+        <td>SAT</td>
+        <td>DAA</td>
+        <td>DL</td>
+        <td>CN</td>
+        <td>SPM</td>
+        <td colspan="2">SPORTS/M</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
